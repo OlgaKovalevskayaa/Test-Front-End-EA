@@ -1,0 +1,16 @@
+.time {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 3.6rem;
+    line-height: 100%;
+    color: $secondary-color;
+    margin: 32px auto 72px;
+}
+
+@media screen and (max-width: 768px) {
+    .time {
+        font-size: 1.8rem;
+        margin: 40px auto;
+    }
+}

@@ -1,0 +1,63 @@
+.time-box {
+    width: 132px;
+    height: 129px;
+    position: relative;
+    &__days::after {
+        content: "Days";
+        @include time-box-item;
+    }
+    &__hours::after {
+        content: "Hours";
+        @include time-box-item;
+    }
+    &__minutes::after {
+        content: "Minutes";
+        @include time-box-item;
+    }
+    &__seconds::after {
+        content: "Seconds";
+        @include time-box-item;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .time-box {
+        width: 64px;
+        height: 82px;
+        &:not(:last-child) {
+            margin-right: 12px;
+        }
+        &:not(:first-child) {
+            margin-left: 12px;
+        }
+        &__days::after {
+            content: "DD";
+            @include time-box-item768;
+        }
+        &__hours::after {
+            content: "HH";
+            @include time-box-item768;
+        }
+        &__minutes::after {
+            content: "MM";
+            @include time-box-item768;
+        }
+        &__seconds::after {
+            content: "SS";
+            @include time-box-item768;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .time-box {
+        width: 310px;
+        height: 82px;
+        &:not(:last-child) {
+            margin-right: 4px;
+        }
+        &:not(:first-child) {
+            margin-left: 4px;
+        }
+    }
+}

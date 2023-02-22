@@ -1,0 +1,24 @@
+@mixin time-box-item {
+    background-image: url(../img/Vector_red_1.png);
+    position: absolute;
+    width: 132px;
+    height: 54px;
+    left: 0px;
+    bottom: 0px;
+    font-weight: $weight-normal;
+    font-size: 0.8rem;
+    line-height: 54px;
+    color: $primary-color;
+}
+
+@mixin time-box-item768 {
+    background-image: url(../img/Vector_red_2.png);
+    left: 0px;
+    bottom: 0px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 0.6rem;
+    line-height: 40px;
+    width: 64px;
+    height: 40px;
+}

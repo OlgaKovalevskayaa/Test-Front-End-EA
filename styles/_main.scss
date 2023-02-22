@@ -1,0 +1,66 @@
+main {
+    /* Чтобы занимал оставшееся пространство */
+    flex-grow: 1;
+    &::before {
+        content: "";
+        background-image: url(../img/Vector_1_1.png);
+        left: 0px;
+        top: 0px;
+        position: absolute;
+        width: 470px;
+        height: 419px;
+    }
+    &::after {
+        content: "";
+        background-image: url(../img/Vector_2_1.png);
+        right: 0px;
+        top: 0px;
+        position: absolute;
+        width: 271px;
+        height: 287px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    main {
+        &::before {
+            content: "";
+            background-image: url(../img/Vector_1_2.png);
+            width: 249px;
+            height: 209px;
+            left: 0px;
+            top: 0px;
+        }
+        &::after {
+            content: "";
+            background-image: url(../img/Vector_2_2.png);
+            right: 0px;
+            top: 0px;
+            position: absolute;
+            width: 271px;
+            height: 287px;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    main {
+        &::before {
+            content: "";
+            background-image: url(../img/Vector_1_3.png);
+            width: 175px;
+            height: 146px;
+            left: 0px;
+            top: 0px;
+        }
+        &::after {
+            content: "";
+            background-image: url(../img/Vector_2_3.png);
+            right: 0px;
+            top: 0px;
+            position: absolute;
+            width: 183px;
+            height: 212px;
+        }
+    }
+}

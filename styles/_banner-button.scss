@@ -1,0 +1,59 @@
+.banner-button {
+    &__paragraf {
+        font-weight: $weight-normal;
+        font-size: 0.9rem;
+        line-height: 150%;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    &__button-anchor {
+        width: 240px;
+        height: 60px;
+        background: #1D4169;
+        border-radius: 40px;
+        color: $primary-color;
+        font-weight: $weight-normal;
+        font-size: 0.9rem;
+        line-height: 150%;
+        margin: 12px auto 0;
+        position: relative;
+        padding: 16px 41px 17px 28px;
+        display: block;
+        text-decoration: none;
+        &::after {
+            content: "";
+            background-image: url(../img/Arrow-right.svg);
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 200px;
+            top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner-button {
+        &__paragraf {
+            font-size: 0.8rem;
+        }
+        &__button-anchor {
+            margin: 15px auto 0;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .banner-button {
+        &__paragraf {
+            min-width: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .banner-button {
+        &__paragraf {
+            font-size: 0.7rem;
+        }
+    }
+}

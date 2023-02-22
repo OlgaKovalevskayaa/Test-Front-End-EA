@@ -1,0 +1,59 @@
+.popup {
+    width: 320px;
+    height: 370px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    border: 1px solid rgba(19, 89, 120, 0.07);
+    border-radius: 2px;
+    position: absolute;
+    padding: 97.47px 16px 69.62px 24px;
+    &__button-icon {
+        border: none;
+        right: 15.65px;
+        top: 23.81px;
+        position: absolute;
+        &::after {
+            content: "";
+            background-image: url(../img/Close.svg);
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            right: 15.65px;
+            top: 23.81px;
+            cursor: pointer;
+        }
+    }
+    &__heading-two {
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 104%;
+        color: #162C4E;
+        margin-bottom: 28.84px;
+    }
+    &__paragraf {
+        font-weight: 400;
+        font-size: 0.8rem;
+        line-height: 150%;
+        color: rgba(0, 0, 0, 0.8);
+        margin-bottom: 29.84px;
+    }
+    &__button {
+        background: #1D4169;
+        border-radius: 40px;
+        width: 200px;
+        height: 59.68px;
+        font-weight: 400;
+        font-size: 0.9rem;
+        line-height: 150%;
+        color: $primary-color;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .popup {
+        width: 300px;
+    }
+}

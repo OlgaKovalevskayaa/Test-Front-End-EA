@@ -1,0 +1,23 @@
+.anchor {
+    &__logo {
+        margin-bottom: 93px;
+        max-width: 190px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .anchor {
+        &__logo {
+            margin-bottom: 166px;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .anchor {
+        &__logo {
+            margin-bottom: 66px;
+            max-width: 128px;
+        }
+    }
+}
